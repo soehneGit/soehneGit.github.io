@@ -1,0 +1,87 @@
+p{
+    font-size:12px;
+    line-height:15px;
+    letter-spacing: -0.044px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.back{
+    padding: 22px 26px;
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+   align-items: center;
+}
+
+.G-4C{
+    display: grid;
+    margin: 20px;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4;
+    gap: 20px;
+    margin-top:120px;
+    min-width: 800px;
+}
+
+.h1-imprint{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-self: left;
+}
+
+.imprint-content-wrapper{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 84px
+}
+
+.imprint-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.imprint-item-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.p-500{
+    font-weight: 500;
+}
+
+.id{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .G-4C{
+        display: flex;
+        margin: 24px;
+        flex-direction: column;
+        margin-top:94px;
+        min-width: 80%;
+        gap: 82px;
+    }
+    .imprint-content-wrapper{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 64px
+    }
+}
